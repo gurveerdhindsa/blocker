@@ -16,10 +16,10 @@ $(".input").change(function(){
   //  $(".input").val('')
 
   //  Establish connection with extension to send messages
-  // var port = chrome.extension.connect({
-    // name: "Content script"
-  // })
+  var port = chrome.extension.connect({
+    name: "Content script"
+  })
 
   //  Pass the blocked domain to extension
-  // port.postMessage($(".input").val());
+  port.postMessage($(".input").val());
 });
