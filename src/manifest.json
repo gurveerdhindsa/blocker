@@ -1,0 +1,24 @@
+{
+  "name": "Blocker",
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.bundle.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "permissions": [
+    "webRequestBlocking",
+    "webRequest",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+   ],
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
