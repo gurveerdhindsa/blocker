@@ -9,11 +9,11 @@ chrome.extension.onConnect.addListener(port => {
   //  Listen for a domain to block
   port.onMessage.addListener(url => {
     urls.push("*://*." + url + "/*")
-    updateFilters();
+    updateBlocks();
   });
 });
 
-function updateFilters() {
+function updateBlocks() {
   if (urls.length > 0)
     chrome.webRequest.onBeforeRequest.addListener(() => ({cancel: true}), {urls: urls}, ['blocking']);
 }

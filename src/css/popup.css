@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+@import url('https://fonts.googleapis.com/css?family=Mukta|Thasadith');
+
+body {
+  padding-top: 0px;
+  margin: 0px;
+  min-width:250px;
+}
+
+.header .logo {
+  opacity: 0.6;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding-left: 65px;
+}
+
+.header .title {
+  position: relative;
+  top: 5px;
+  left: -30px;
+}
+
+.title {
+  color: red;
+  text-align: center;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.description {
+  color: #888888;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+}
+
+.input {
+  display: block;
+  margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-style: italic;
+}
+
+.blocked-description {
+  color: #888888;
+  text-align: left;
+  padding-left: 25px;
+  font-family: 'Mukta', sans-serif;
+}
+
+.blocked-list {
+  color: #888888;
+  text-align: center;
+  padding-right: 25px;
+  font-family: 'Mukta', sans-serif;
+  list-style: none;
+}
+
+.blocked-item {
+  display: inline-block;
+}
+
+.blocked-item--website {
+  margin-right: 20px;
+}
+
+.blocked-item--delete {
+  opacity: 0.3;
+}
+
+.blocked-item--delete:hover {
+  opacity: 1;
+}
