@@ -18,8 +18,7 @@ chrome.runtime.getBackgroundPage(bg => {
     Adding a blocked site
   */
   $(".input").change(() => {
-    $('.blocked-list').append('<li class="blocked-item"><span class="blocked-item--website">' + $(".input").val() + '</span>')
-    $('.blocked-list').append('<span class="blocked-item--delete">X</span></li>')
+    $('.blocked-list').append('<li class="blocked-item"><p class="blocked-item--website">' + $(".input").val() + '</p></li>')
     // $('.blocked-list').append('<i class="blocked-item--delete fas fa-times" onclick=""></i></li>')
 
     //  Validate the domain input is correct

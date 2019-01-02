@@ -50,16 +50,23 @@ body {
   font-family: 'Mukta', sans-serif;
 }
 
+#data-list {
+  overflow-y: scroll;
+  min-height: 90px;
+  height: 90px;
+}
+
 .blocked-list {
   color: #888888;
   text-align: center;
   padding-right: 25px;
   font-family: 'Mukta', sans-serif;
   list-style: none;
+  display: block;
 }
 
 .blocked-item {
-  display: inline-block;
+  display: block;
 }
 
 .blocked-item--website {
@@ -72,4 +79,11 @@ body {
 
 .blocked-item--delete:hover {
   opacity: 1;
+}
+
+.blocked-message--noblocks {
+  color: #888888;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  opacity: 0.3;
 }
